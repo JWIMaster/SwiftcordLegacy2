@@ -2,14 +2,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "SwiftcordLegacy",
+    name: "SwiftcordLegacy2",
     platforms: [
         .iOS("7.0")
     ],
     products: [
         .library(
-            name: "SwiftcordLegacy",
-            targets: ["SwiftcordLegacy"]
+            name: "SwiftcordLegacy2",
+            targets: ["SwiftcordLegacy2"]
         ),
     ],
     dependencies: [
@@ -18,7 +18,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "SwiftcordLegacy",
+            name: "SwiftcordLegacy2",
             dependencies: [
                 .product(name: "FoundationCompatKit", package: "FoundationCompatKit"),
                 .product(name: "NSJSONSerializationForSwift", package: "NSJSONSerialization-for-Swift"),
@@ -26,7 +26,7 @@ let package = Package(
         ),
         .testTarget(
             name: "SwiftcordLegacyTests",
-            dependencies: ["SwiftcordLegacy"]
+            dependencies: ["SwiftcordLegacy2"]
         ),
     ]
 )
